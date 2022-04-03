@@ -1,3 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Overpass:wght@300&family=Poppins:wght@200&family=Ubuntu:wght@500&display=swap');
+
+:root{
+    --VeryLightGrayishBlue : hsl(240, 78%, 98%);  
+    --LightGrayishBlue: hsl(234, 14%, 74%); 
+    --GrayishBlue: hsl(233, 13%, 49%); 
+    --DarkGrayishBlue: hsl(232, 13%, 33%);
+    --LinearGradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+    --fontSize : 15px; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: "Montserrat";
+    font-size:var(--fontSize);
+}
+
+.container {
+    height: 50%;
+    margin: 10px;
+}
+
+.container > h1 {
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    margin-right: 4%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    margin-left: 40%;
+    gap: 10px;
+}
+/**/
+
+/*Basic container*/
+
+.priceRow{
+    display: flex;
+    flex-direction: row;
+    justify-content:center; 
+}
+
+.blockContainer{
+    margin:2%;
+    border-style: solid;
+    width:29%; 
+    height: 300px;
+    border-radius: 4%;
+}
+
+.blockContainer:nth-child(2n){
+    color: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+button{
+    position: relative;
+    left: 37%;
+
+}
+
+h3{
+    color:var(--LightGrayishBlue) ;
+}
+
+.blockContainer > h3, p, .price{
+    text-align: center;
+    height: 14%;
+    margin: 4px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.price{
+    font-weight: 700;
+    position: relative;
+    bottom: 17px;
+    font-size: 40px;
+}
+
+/*End basic container*/
 .toggle-switch, .toggle-switch .toggle-knob {
     -moz-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
