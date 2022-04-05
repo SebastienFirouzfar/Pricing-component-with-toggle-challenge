@@ -64,7 +64,6 @@ h1, h2, p, .price, .priceAnnual{
 
 .blockContainer{
     margin:1%;
-    border-style: solid;
     width:22%; 
     height: 400px; 
     border-radius: 4%;
@@ -79,13 +78,13 @@ h1, h2, p, .price, .priceAnnual{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2);
     transform: scale(1.2); 
+    color:#ffff;
 }
 
 .blockContainer:nth-child(2n) > h2{
     color: var(--VeryLightGrayishBlue);
     padding :1.2rem;
 }
-
 
 
 button{
@@ -111,8 +110,8 @@ h2{
     font-weight: 700;
     position: relative;
     bottom: 17px;
-    left: 26%;
-    font-size: 40px;
+    left: 14%;
+    font-size: 4rem;
 }
 
 
