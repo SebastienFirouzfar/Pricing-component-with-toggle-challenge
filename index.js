@@ -1,15 +1,12 @@
 let toggler = document.querySelector(".toggle-switch");
-let price = document.querySelectorAll(".price");
+let basic = document.getElementById("basic");
+let professional = document.getElementById("professional");
+let master = document.getElementById("master");
 
 toggler.onclick = () => {
   toggler.classList.toggle("active");
-  if (toggler.classList.contains("active")) {
-    for (var i = 0; i < price.length; i++) {
-      price[i].innerText =  price[i].innerText / 10;
-    }
-  } else {
-    for (var i = 0; i < price.length; i++) {
-        price[i].innerText = price[i].innerText * 10;
-    }
-  }
+  basic.textContent = basic.textContent === "$199.99" ? "$19.99" : "$199.99"; 
+  professional.textContent = professional.textContent === "$249.99" ? "$24.99" : "$249.99";
+  master.textContent = master.textContent === "$399.99" ? "$39.99" : "$399.99";
+  
 };
