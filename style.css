@@ -23,7 +23,7 @@ body {
     padding: 0;
 }
 
-h1, h2, p, .price, .priceAnnual{
+h1, h2, p, .price, .priceAnnual, li{
     font-size:var(--fontSize);
 }
 
@@ -54,6 +54,10 @@ h1, h2, p, .price, .priceAnnual{
 .priceContainer{
     position: relative;
     top: 30px;
+}
+
+li{
+    list-style: none;
 }
 
 .priceRow{
@@ -97,7 +101,7 @@ h2{
     padding :1.2rem;
 }
 
-.blockContainer > h2, p{
+.blockContainer > h2, p, li{
     text-align: center;
     height: 14%;
     margin: 4px;
@@ -114,6 +118,9 @@ h2{
     font-size: 4rem;
 }
 
+button{
+    padding: 5%; 
+}
 
 /*End basic container*/
 .toggle-switch, .toggle-switch .toggle-knob {
@@ -155,3 +162,16 @@ h2{
 .toggle-switch.active .toggle-knob {
     margin-left: 24px;
 }
+
+
+@media (max-width: 992px) { 
+
+    .price{
+        font-weight: 700;
+        position: relative;
+        bottom: 17px;
+        left: 10%;
+        font-size: 3rem;
+    }
+
+ }
