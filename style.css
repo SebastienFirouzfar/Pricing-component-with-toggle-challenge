@@ -91,10 +91,23 @@ li{
 }
 
 
+.btn{
+    background-color: hsl(236, 72%, 79%);
+    background-image: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #ffffff;
+    font-size: var(--fontSize);
+}
+
 button{
     position: relative;
-    left: 37%;
+    left: 10%;
+    padding: 5%; 
+    width: 80%; 
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
 }
+
 
 h2{
     color:var(--DarkGrayishBlue);
@@ -109,6 +122,9 @@ h2{
     font-weight: 700;
 }
 
+li{
+    margin: 7%;
+}
 
 .price{
     font-weight: 700;
@@ -118,11 +134,15 @@ h2{
     font-size: 4rem;
 }
 
-button{
-    padding: 5%; 
+/*End basic container*/
+
+.attribution{
+    position: relative;
+    top: 22px;
+    margin: 4%;
 }
 
-/*End basic container*/
+
 .toggle-switch, .toggle-switch .toggle-knob {
     -moz-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -170,8 +190,50 @@ button{
         font-weight: 700;
         position: relative;
         bottom: 17px;
-        left: 10%;
+        left: 2%;
         font-size: 3rem;
     }
 
- }
+    .blockContainer{
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .row{
+        position: relative;
+        right: 6%;
+    }
+    
+    .priceRow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 55px;
+    }
+
+    .blockContainer{
+        width: 39%;
+        position: relative;
+        left: 29%;
+        height: 386px;
+    }
+
+    .blockContainer:nth-child(2n+1){
+        width: 47%;
+        position: relative;
+        left: 25%;
+    }
+
+    .blockContainer:nth-child(2n+1) > .price{
+        position: relative;
+        left: 20%;
+    }
+
+    .price{
+        position: relative;
+        left: 13%;
+    }    
+}
+
