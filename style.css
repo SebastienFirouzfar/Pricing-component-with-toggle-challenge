@@ -177,7 +177,8 @@ li{
 }
 
 .toggle-switch.active {
-    background-color: #77e189;
+    background-color: hsl(236, 72%, 79%);
+    background-image: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     border: solid 1px transparent;
 }
 
